@@ -20,13 +20,16 @@ nav {
   font-size: 20px;
 }
 
-#movieContainer {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(300px, 1fr));
-  gap: 20px;
-  padding: 1vw;
 
+.card img {
+  width: 100%;
+  height: auto; 
+  max-height: 40vh; 
+  object-fit: contain; 
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
+
 
 .card {
   border: 1px solid #ccc;
@@ -36,7 +39,11 @@ nav {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
+  
 }
+
+
 
 .card:hover {
   transform: translateY(-5px);
